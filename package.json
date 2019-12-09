@@ -1,0 +1,29 @@
+{
+  "name": "server-ijunte",
+  "version": "1.0.0",
+  "description": "meetup for programmers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waldo237/server-ijunte.git"
+  },
+  "keywords": [
+    "el",
+    "junte",
+    "de",
+    "coordinadores"
+  ],
+  "author": "Waldo Milanes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waldo237/server-ijunte/issues"
+  },
+  "homepage": "https://github.com/waldo237/server-ijunte#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.0"
+  }
+}
