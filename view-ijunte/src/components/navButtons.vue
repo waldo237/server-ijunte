@@ -20,13 +20,13 @@
   
     <!-- search guru ends -->
          <!-- la aldea starts -->
-      <v-btn class="no-uppercase mx-1 azul5" text dark rounded>
+      <v-btn class="no-uppercase mx-1 azul5" text dark rounded  :class="(column) ?'ma-1':''">
         La aldea
       </v-btn>
     <!-- la aldea ends -->
 
     <!-- mi cuenta starts -->
-      <v-btn class="no-uppercase pa-1 azul5" text rounded dark>
+      <v-btn class="no-uppercase pa-1 azul5" text rounded dark  :class="(column) ?'ma-1':''">
         <v-avatar size="30">
           <img :src="profilePhoto" alt="alt" class="mx-1" />
         </v-avatar>
@@ -35,23 +35,23 @@
     <!-- mi cuenta ends -->
 
     <!-- messages starts -->
-      <v-btn text>
+      <v-btn text :rounded="(column) ?true:false" :class="(column) ?'azul5 white--text ma-1':''">
         <v-icon>fa-comments</v-icon>
-        <span v-if="column">Chat</span>
+        <span v-if="column" class="mx-2">Chat</span>
       </v-btn>
     <!-- messages ends -->
 
     <!-- create groups starts -->
-      <v-btn text>
+      <v-btn text :rounded="(column) ?true:false" :class="(column) ?'azul5 white--text ma-1':''">
         <v-icon>fa-users</v-icon>
-        <span v-if="column">Crear equipo</span>
+        <span v-if="column" class="mx-2">Crear equipo</span>
       </v-btn>
     <!-- create groups ends -->
 
     <!-- notification starts -->
-      <v-btn text>
+      <v-btn text :rounded="(column) ?true:false" :class="(column) ?'azul5 white--text ma-1':''">
         <v-icon>fa-bell</v-icon>
-        <span v-if="column">Notificaciones</span>
+        <span v-if="column" class="mx-2">Notificaciones</span>
       </v-btn>
     <!-- notification ends -->
 
@@ -59,9 +59,9 @@
       <v-btn text v-if="!column">
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
-      <v-btn text v-if="column">
+      <v-btn text v-if="column" :rounded="(column) ?true:false" :class="(column) ?'azul5 white--text ma-1':''">
         <v-icon>mdi-settings</v-icon>
-        <span v-if="column">ajustes</span>
+        <span v-if="column" class="mx-2">ajustes</span>
       </v-btn>
     <!-- more option ends -->
     </v-layout>

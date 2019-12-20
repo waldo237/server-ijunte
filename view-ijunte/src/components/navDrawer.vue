@@ -11,7 +11,7 @@
 
       <v-divider></v-divider>
 
-      <v-list dense>
+      <v-list dense class="ma-3">
          <!-- options when logged in starts -->
       <loggedNav :lDrawer="lDrawer" />
       <!-- options when logged in ends -->
