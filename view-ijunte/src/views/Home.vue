@@ -16,7 +16,6 @@
         <v-btn block color="black" rounded class="my-3 white--text no-uppercase"> <v-icon class="mx-2 ">fab fa-github</v-icon> Regístrate con Github</v-btn>
         <v-btn block color="#4267b2" rounded class="my-3 white--text no-uppercase" > <v-icon class="mx-2 ">fab fa-facebook</v-icon> Regístrate con Facebook</v-btn>
     </v-card>
-    
   </v-layout>
 
   </v-container >

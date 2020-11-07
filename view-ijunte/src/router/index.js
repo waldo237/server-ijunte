@@ -39,7 +39,17 @@ const routes = [
       requiresAuth: true,
       resquiresValidation: true
     }
-  }
+  },
+  {
+    path: "/tutorials",
+    name: "tutorials",
+    component: () =>
+      import(/* webpackChunkName: "aldea" */ "../views/Tutorials.vue"),
+    meta: {
+      requiresAuth: true,
+      resquiresValidation: true
+    }
+  },
 ];
 
 const router = new VueRouter({
